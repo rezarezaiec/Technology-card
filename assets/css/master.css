@@ -1,0 +1,97 @@
+/*************  fonts  *************/
+@font-face {
+  font-family: "poppins-light";
+  src: url("../../public/fonts/Poppins-Light.ttf");
+}
+@font-face {
+  font-family: "poppins-bold";
+  src: url("../../public/fonts/Poppins-Bold.ttf");
+}
+/*************  variables  *************/
+:root {
+  --color-text-1: rgb(100, 100, 100);
+  --color-text-2: gray;
+  --border-radius: 8px;
+  font-family: "poppins-light";
+}
+/********** Start Header **********/
+.header .header-title-1 {
+  color: var(--color-text-2);
+  font-family: "poppins-light";
+}
+.header .header-title-2 {
+  color: var(--color-text-1);
+  font-family: "poppins-bold";
+}
+.header .header-desc {
+  width: 40%;
+  color: var(--color-text-1);
+  font-family: "poppins-light";
+}
+/***** Start Responsive Header *****/
+@media (max-width: 992px) {
+  .header .header-desc {
+    width: 50%;
+  }
+}
+@media (max-width: 768px) {
+  .header .header-desc {
+    width: 70%;
+  }
+}
+@media (max-width: 576px) {
+  .header .header-desc {
+    width: 80%;
+  }
+}
+/***** End Responsive Header *****/
+/********** End Header **********/
+/********** Start Card **********/
+.card {
+  box-shadow: 2px 2px 15px rgb(193 200 224);
+  width: 95%;
+  border-radius: 10px;
+}
+/***** Card Text  *****/
+.card .card-title {
+  font-family: "poppins-bold";
+  color: var(--color-text-1);
+  font-size: 20px;
+}
+.card .card-text {
+  color: var(--color-text-2);
+  font-size: 16px;
+  font-family: "poppins-light";
+}
+/***** Card Border Manual class  *****/
+.border-supervisor {
+  border-top: 4px solid #86dedb;
+}
+.border-team-builder {
+  border-top: 4px solid #ed6d7d;
+}
+.border-karma {
+  border-top: 4px solid #f9db55;
+}
+.border-calculator {
+  border-top: 4px solid #669ceb;
+}
+/***** Start Responsive Card *****/
+@media (max-width: 992px) {
+  .card .card-title {
+    font-size: 16px;
+  }
+  .card .card-text {
+    font-size: 13px;
+  }
+}
+@media (max-width: 768px) {
+  .card .card-title {
+    font-size: 19px;
+  }
+  .card .card-text {
+    font-size: 15px;
+  }
+}
+/***** End Responsive Card *****/
+/********** End Card **********/
